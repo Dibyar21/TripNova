@@ -2,6 +2,9 @@
 
 A responsive travel discovery website that helps users explore destinations, discover travel experiences, save favourite places, and create a simple travel itinerary.
 
+### GitHub Repository: https://github.com/Dibyar21/TripNova
+### Live Demo: tripnova.vercel.app
+
 ## 📌 Project Overview
 
 **TripNova – Travel Explorer** is a front-end web development project developed as part of my internship at **Infrasoftech Pvt. Ltd.**
