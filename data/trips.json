@@ -1,0 +1,146 @@
+[
+  {
+    "id": "bali",
+    "name": "Bali, Indonesia",
+    "location": "Indonesia · Southeast Asia",
+    "category": "Beach",
+    "price": 18500,
+    "days": "5 days / 4 nights",
+    "rating": 4.9,
+    "reviews": 284,
+    "tag": "Island favourite",
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85",
+    "description": "Find your rhythm among emerald rice terraces, hidden waterfalls, temple sunsets, and beachside cafés. Bali is a beautiful balance of slow mornings and unforgettable adventures.",
+    "highlights": [
+      "Ubud rice terraces",
+      "Uluwatu sunset",
+      "Waterfall day trip"
+    ]
+  },
+  {
+    "id": "manali",
+    "name": "Manali, India",
+    "location": "Himachal Pradesh · India",
+    "category": "Nature",
+    "price": 7800,
+    "days": "4 days / 3 nights",
+    "rating": 4.8,
+    "reviews": 192,
+    "tag": "Mountain escape",
+    "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1000&q=85",
+    "description": "Breathe in crisp mountain air, wander pine-scented trails, and watch the Himalayas glow at golden hour. A refreshing getaway for nature lovers and mountain dreamers.",
+    "highlights": [
+      "Solang Valley",
+      "Old Manali cafés",
+      "Mountain viewpoints"
+    ]
+  },
+  {
+    "id": "jaipur",
+    "name": "Jaipur, India",
+    "location": "Rajasthan · India",
+    "category": "Culture",
+    "price": 6200,
+    "days": "3 days / 2 nights",
+    "rating": 4.7,
+    "reviews": 156,
+    "tag": "Colour & culture",
+    "image": "https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1000&q=85",
+    "description": "Step into a world of rose-coloured streets, intricate palaces, lively bazaars, and Rajasthani flavours. Jaipur brings centuries of craft and culture into every corner.",
+    "highlights": [
+      "Amber Fort",
+      "Hawa Mahal",
+      "Local bazaars"
+    ]
+  },
+  {
+    "id": "meghalaya",
+    "name": "Meghalaya, India",
+    "location": "Northeast India",
+    "category": "Adventure",
+    "price": 9400,
+    "days": "5 days / 4 nights",
+    "rating": 4.9,
+    "reviews": 118,
+    "tag": "Off the map",
+    "image": "https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=85",
+    "description": "Follow misty roads into living-root bridges, lush valleys, caves, and waterfalls. Meghalaya rewards curious travellers with a wild, green world that feels wonderfully different.",
+    "highlights": [
+      "Living root bridges",
+      "Dawki river",
+      "Cherrapunji waterfalls"
+    ]
+  },
+  {
+    "id": "goa",
+    "name": "South Goa, India",
+    "location": "Goa · India",
+    "category": "Beach",
+    "price": 6900,
+    "days": "3 days / 2 nights",
+    "rating": 4.6,
+    "reviews": 231,
+    "tag": "Slow living",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=85",
+    "description": "Trade your schedule for sea breezes, quiet sandy coves, Portuguese-era lanes, and long sunset walks. South Goa is made for doing a little less and feeling a little more.",
+    "highlights": [
+      "Quiet beaches",
+      "Old Goa heritage",
+      "Sunset cafés"
+    ]
+  },
+  {
+    "id": "swiss",
+    "name": "Swiss Alps, Switzerland",
+    "location": "Switzerland · Europe",
+    "category": "Nature",
+    "price": 48500,
+    "days": "7 days / 6 nights",
+    "rating": 5.0,
+    "reviews": 307,
+    "tag": "Once in a lifetime",
+    "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1000&q=85",
+    "description": "Ride scenic trains past storybook villages, alpine lakes, and snow-dusted peaks. The Swiss Alps are a dreamscape for travellers who love grand landscapes and little details.",
+    "highlights": [
+      "Alpine train rides",
+      "Lake viewpoints",
+      "Mountain villages"
+    ]
+  },
+  {
+    "id": "varanasi",
+    "name": "Varanasi, India",
+    "location": "Uttar Pradesh · India",
+    "category": "Culture",
+    "price": 4800,
+    "days": "2 days / 1 night",
+    "rating": 4.7,
+    "reviews": 143,
+    "tag": "Soulful journey",
+    "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=1000&q=85",
+    "description": "Experience riverside mornings, ancient lanes, craft traditions, and the timeless atmosphere of one of India's oldest living cities. Come with curiosity and leave with stories.",
+    "highlights": [
+      "Ganga sunrise boat ride",
+      "Old-city walk",
+      "Evening aarti"
+    ]
+  },
+  {
+    "id": "rishikesh",
+    "name": "Rishikesh, India",
+    "location": "Uttarakhand · India",
+    "category": "Adventure",
+    "price": 5500,
+    "days": "3 days / 2 nights",
+    "rating": 4.8,
+    "reviews": 174,
+    "tag": "Find your edge",
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85",
+    "description": "Pair riverside calm with a little adrenaline. From forest walks and yoga by the Ganges to seasonal rafting and cliffside views, Rishikesh offers room to reset and explore.",
+    "highlights": [
+      "Ganga riverside",
+      "Forest trails",
+      "Seasonal rafting"
+    ]
+  }
+]

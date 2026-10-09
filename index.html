@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="TripNova helps you discover unforgettable destinations, plan trips, and save your dream getaways." />
+  <title>TripNova — Find Your Next Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-glass">
+    <div class="container">
+      <a class="navbar-brand brand" href="#"><span class="brand-mark"><i class="bi bi-compass-fill"></i></span>
+        Trip<span>Nova</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiences">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#itinerary">Trip Builder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+        <div class="nav-actions d-flex align-items-center gap-3">
+          <button class="btn btn-link wishlist-nav position-relative" id="navWishlist" aria-label="View saved trips">
+            <i class="bi bi-heart"></i><span class="wishlist-count" id="wishlistCount">0</span>
+          </button>
+          <button class="btn btn-link wishlist-nav position-relative" id="navBookings" aria-label="Manage bookings">
+            <i class="bi bi-calendar-check"></i><span class="wishlist-count" id="bookingCount">0</span>
+          </button>
+          <a class="btn btn-dark rounded-pill px-4" href="#destinations">Explore trips <i
+              class="bi bi-arrow-up-right ms-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <span class="eyebrow light-eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS
+            HERE</span>
+          <h1>Collect moments.<br /><em>Not just miles.</em></h1>
+          <p>
+            Discover places that move you, experiences that stay with you, and
+            journeys worth telling stories about.
+          </p>
+          <div class="hero-buttons">
+            <a href="#destinations" class="btn btn-lime btn-lg rounded-pill">Explore destinations <i
+                class="bi bi-arrow-up-right ms-2"></i></a>
+            <a href="#experiences" class="hero-link"><span class="play-circle"><i class="bi bi-play-fill"></i></span>
+              Find your kind of trip</a>
+          </div>
+        </div>
+        <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+      </div>
+    </section>
+
+    <section class="search-wrap container">
+      <form id="searchForm" class="search-panel row g-3 align-items-end">
+        <div class="col-12 col-md-4 search-field">
+          <label for="searchInput"><i class="bi bi-geo-alt"></i> Destination</label>
+          <input id="searchInput" class="form-control" type="search" placeholder="Where do you want to go?" />
+        </div>
+        <div class="col-6 col-md-3 search-field">
+          <label for="categoryFilter"><i class="bi bi-compass"></i> Travel style</label>
+          <select id="categoryFilter" class="form-select">
+            <option value="all">All experiences</option>
+            <option value="Nature">Nature</option>
+            <option value="Beach">Beach</option>
+            <option value="Culture">Culture</option>
+            <option value="Adventure">Adventure</option>
+          </select>
+        </div>
+        <div class="col-6 col-md-3 search-field">
+          <label for="budgetFilter"><i class="bi bi-wallet2"></i> Budget</label>
+          <select id="budgetFilter" class="form-select">
+            <option value="all">Any budget</option>
+            <option value="5000">Under ₹5,000</option>
+            <option value="10000">Under ₹10,000</option>
+            <option value="20000">Under ₹20,000</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-2 d-grid">
+          <button class="btn btn-dark search-btn rounded-pill" type="submit">
+            Find trips <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section-pad destinations-section" id="destinations">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <span class="eyebrow">THE WORLD IS WAITING</span>
+            <h2>Places that <em>stay with you.</em></h2>
+            <p class="section-subtitle">
+              Handpicked escapes for your next great story.
+            </p>
+          </div>
+          <button class="btn btn-outline-dark rounded-pill px-4" id="resetFilters">
+            Reset filters <i class="bi bi-arrow-counterclockwise ms-1"></i>
+          </button>
+        </div>
+        <div class="results-toolbar d-flex flex-wrap align-items-center justify-content-between gap-3">
+          <div id="resultsInfo" class="results-info mb-0" aria-live="polite">
+            Discovering destinations…
+          </div>
+          <div class="sort-control">
+            <label for="sortFilter"><i class="bi bi-sort-down me-1"></i> Sort by</label><select id="sortFilter"
+              class="form-select form-select-sm">
+              <option value="recommended">Recommended</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="rating-desc">Top rated</option>
+              <option value="name-asc">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div id="tripGrid" class="row g-4"></div>
+        <div id="emptyState" class="empty-state d-none">
+          <i class="bi bi-map"></i>
+          <h3>No trips found</h3>
+          <p>Try a different destination, travel style, or budget.</p>
+          <button class="btn btn-dark rounded-pill" id="emptyReset">
+            Show all trips
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="itinerary-section section-pad" id="itinerary">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <span class="eyebrow">MAKE IT YOURS</span>
+            <h2>Build your <em>own itinerary.</em></h2>
+            <p class="section-subtitle">
+              Choose a destination, add your must-dos, and save a day-by-day
+              plan.
+            </p>
+          </div>
+        </div>
+        <div class="builder-panel mt-4">
+          <form id="itineraryForm" class="row g-3 align-items-end">
+            <div class="col-12 col-md-4">
+              <label class="form-label" for="itineraryDestination">Destination</label><select class="form-select"
+                id="itineraryDestination" required>
+                <option value="">Choose a destination</option>
+              </select>
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label" for="itineraryDay">Day</label><select class="form-select" id="itineraryDay">
+                <option value="1">Day 1</option>
+                <option value="2">Day 2</option>
+                <option value="3">Day 3</option>
+                <option value="4">Day 4</option>
+                <option value="5">Day 5</option>
+                <option value="6">Day 6</option>
+                <option value="7">Day 7</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-4">
+              <label class="form-label" for="itineraryActivity">Activity / place to visit</label><input
+                class="form-control" id="itineraryActivity" placeholder="e.g. Sunrise viewpoint" required
+                maxlength="100" />
+            </div>
+            <div class="col-6 col-md-2">
+              <label class="form-label" for="itineraryTime">Time</label><select class="form-select" id="itineraryTime">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="itineraryNotes">Notes (optional)</label><input class="form-control"
+                id="itineraryNotes" placeholder="Transport, tickets, food, or reminders" maxlength="180" />
+            </div>
+            <div class="col-12 d-flex flex-wrap gap-2">
+              <button class="btn btn-dark rounded-pill px-4" type="submit">
+                <i class="bi bi-plus-lg me-1"></i> Add to itinerary</button><button
+                class="btn btn-outline-dark rounded-pill px-4" type="button" id="clearItinerary">
+                Clear itinerary
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="itinerary-results mt-4">
+          <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+            <h3 class="h5 fw-bold mb-0">Your itinerary</h3>
+            <span id="itineraryCount" class="small text-muted">0 activities</span>
+          </div>
+          <div id="itineraryList" class="itinerary-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-management-section section-pad" id="bookingManagement">
+      <div class="container">
+        <div class="section-heading d-flex flex-wrap align-items-end justify-content-between gap-3">
+          <div>
+            <span class="eyebrow">YOUR TRAVEL DESK</span>
+            <h2>Keep plans <em>in one place.</em></h2>
+            <p class="section-subtitle">
+              Review your saved demo trip requests and manage your travel
+              shortlist.
+            </p>
+          </div>
+          <button class="btn btn-outline-dark rounded-pill px-4" id="refreshBookings">
+            <i class="bi bi-arrow-clockwise me-1"></i> Refresh list
+          </button>
+        </div>
+        <div id="bookingManagementList" class="booking-management-list mt-4"></div>
+      </div>
+    </section>
+
+    <section class="experience-section section-pad" id="experiences">
+      <div class="container">
+        <div class="section-heading text-center mx-auto">
+          <span class="eyebrow">TRAVEL YOUR WAY</span>
+          <h2>What does your <em>soul need?</em></h2>
+          <p class="section-subtitle">
+            A little inspiration for the kind of journey you're craving.
+          </p>
+        </div>
+        <div class="row g-3 mt-4">
+          <div class="col-6 col-lg-3">
+            <button class="experience-card exp-nature" data-experience="Nature">
+              <span class="exp-icon"><i class="bi bi-tree"></i></span><span class="exp-title">Into the wild</span><span
+                class="exp-copy">Mountains, forests & fresh air</span><i class="bi bi-arrow-up-right exp-arrow"></i>
+            </button>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button class="experience-card exp-beach" data-experience="Beach">
+              <span class="exp-icon"><i class="bi bi-water"></i></span><span class="exp-title">Coastal calm</span><span
+                class="exp-copy">Salt air and slower days</span><i class="bi bi-arrow-up-right exp-arrow"></i>
+            </button>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button class="experience-card exp-culture" data-experience="Culture">
+              <span class="exp-icon"><i class="bi bi-buildings"></i></span><span class="exp-title">Culture &
+                stories</span><span class="exp-copy">Local life, food & heritage</span><i
+                class="bi bi-arrow-up-right exp-arrow"></i>
+            </button>
+          </div>
+          <div class="col-6 col-lg-3">
+            <button class="experience-card exp-adventure" data-experience="Adventure">
+              <span class="exp-icon"><i class="bi bi-compass"></i></span><span class="exp-title">Chase the
+                thrill</span><span class="exp-copy">Take the scenic detour</span><i
+                class="bi bi-arrow-up-right exp-arrow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section section-pad" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="story-image">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1100&q=85"
+                alt="Mountain lake surrounded by green hills" loading="lazy" />
+              <div class="story-stamp">
+                <i class="bi bi-suit-heart-fill"></i><span>Go somewhere<br />that feels like you.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 story-copy">
+            <span class="eyebrow">A LITTLE ABOUT TRIPNOVA</span>
+            <h2>
+              Travel isn't about escaping life. It's about
+              <em>making it bigger.</em>
+            </h2>
+            <p>
+              We believe the best journeys bring you closer to the world—and
+              to yourself. TripNova is your starting point for finding places,
+              planning adventures, and keeping your favourite possibilities
+              close.
+            </p>
+            <div class="stat-row">
+              <div><strong>24/7</strong><span>Inspiration</span></div>
+              <div><strong>4 styles</strong><span>To explore</span></div>
+              <div><strong>100%</strong><span>Your journey</span></div>
+            </div>
+            <a href="#destinations" class="btn btn-dark rounded-pill px-4 mt-4">Start exploring <i
+                class="bi bi-arrow-up-right ms-1"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container newsletter-box">
+        <div>
+          <span class="eyebrow light-eyebrow">A NOTE FROM THE WORLD</span>
+          <h2>
+            Good places. Great stories.<br /><em>Right in your inbox.</em>
+          </h2>
+          <p>Get travel inspiration and new places to dream about.</p>
+        </div>
+        <form id="newsletterForm" class="newsletter-form">
+          <label class="visually-hidden" for="newsletterEmail">Email address</label>
+          <div class="input-group">
+            <input class="form-control" type="email" id="newsletterEmail" placeholder="Your email address"
+              required /><button class="btn btn-lime" type="submit" aria-label="Subscribe">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          <small id="newsletterMessage" aria-live="polite">No spam, just a little wanderlust.</small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <a class="navbar-brand brand" href="#"><span class="brand-mark"><i class="bi bi-compass-fill"></i></span>
+        Trip<span>Nova</span></a>
+      <p class="mb-0">Made for the places you haven't met yet.</p>
+      <span class="footer-copy">© <span id="year"></span> TripNova. Demo project.</span>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="tripModal" tabindex="-1" aria-labelledby="tripModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content trip-modal">
+        <div id="modalHero" class="modal-hero"></div>
+        <div class="modal-body p-4 p-md-5">
+          <div class="d-flex justify-content-between align-items-start gap-3">
+            <div>
+              <span id="modalCategory" class="trip-category"></span>
+              <h2 id="tripModalTitle" class="modal-trip-title"></h2>
+              <p id="modalLocation" class="text-muted"></p>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <p id="modalDescription" class="modal-description"></p>
+          <div class="modal-facts" id="modalFacts"></div>
+          <div class="d-flex flex-wrap gap-2 mt-4">
+            <button class="btn btn-dark rounded-pill px-4" id="bookTripBtn">
+              Plan this trip <i class="bi bi-arrow-right ms-1"></i></button><button
+              class="btn btn-outline-dark rounded-pill px-4" id="modalSaveBtn">
+              <i class="bi bi-heart me-1"></i> Save trip
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content booking-modal">
+        <div class="modal-header border-0 px-4 pt-4">
+          <div>
+            <span class="eyebrow">YOUR NEXT ADVENTURE</span>
+            <h2 class="modal-title" id="bookingTitle">Plan your trip</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4 pb-4">
+          <form id="bookingForm">
+            <input type="hidden" id="bookingTripId" />
+            <div class="selected-trip mb-3" id="selectedTripName"></div>
+            <div class="mb-3">
+              <label class="form-label" for="travelerName">Your name</label><input class="form-control"
+                id="travelerName" required minlength="2" placeholder="Full name" />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="travelerEmail">Email address</label><input class="form-control"
+                id="travelerEmail" type="email" required placeholder="you@example.com" />
+            </div>
+            <div class="row g-3">
+              <div class="col-6">
+                <label class="form-label" for="travelDate">Travel date</label><input class="form-control"
+                  id="travelDate" type="date" required />
+              </div>
+              <div class="col-6">
+                <label class="form-label" for="travelerCount">Travelers</label><select class="form-select"
+                  id="travelerCount">
+                  <option>1</option>
+                  <option selected>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-dark rounded-pill w-100 mt-4 py-3" type="submit">
+              Save trip plan <i class="bi bi-arrow-right ms-1"></i>
+            </button>
+            <p class="form-note mt-3 mb-0">
+              Demo booking only. Your plan is saved in this browser; no
+              payment is collected.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="appToast" class="toast border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastMessage">Done!</div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wishlist-drawer-backdrop" id="wishlistBackdrop"></div>
+  <aside class="wishlist-drawer" id="wishlistDrawer" aria-label="Saved trips" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <span class="eyebrow">YOUR SHORTLIST</span>
+        <h2>Saved trips <span id="drawerCount">(0)</span></h2>
+      </div>
+      <button class="btn-close" id="closeWishlist" aria-label="Close saved trips"></button>
+    </div>
+    <div id="wishlistItems" class="wishlist-items"></div>
+    <div class="drawer-footer">
+      <button class="btn btn-outline-dark rounded-pill w-100" id="clearWishlist">
+        Clear saved trips
+      </button>
+    </div>
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
