@@ -8,8 +8,8 @@ The project focuses on providing a smooth travel-planning experience with modern
 
 ## 🌐 Live Demo
 
-- **Live Website:** (https://tripnova.vercel.app/)
-- **GitHub Repository:** (https://github.com/Dibyar21/TripNova)
+- **Live Website:** [(https://tripnova.vercel.app/)]
+- **GitHub Repository:** [(https://github.com/Dibyar21/TripNova)]
 
 ## ✨ Features
 
