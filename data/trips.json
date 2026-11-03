@@ -1,0 +1,194 @@
+[
+  {
+    "id": "bali",
+    "name": "Bali",
+    "country": "Indonesia",
+    "region": "Southeast Asia",
+    "category": "Beach",
+    "duration": "5 days",
+    "price": 29999,
+    "rating": 4.9,
+    "shortDescription": "Temple sunsets, lush rice terraces, and slow island mornings.",
+    "description": "Bali is a beautiful mix of tropical coastline, lush green landscapes, creative towns, and centuries-old spiritual traditions. Spend your days exploring temples and rice terraces, then slow down with a sunset by the sea. This sample package is a planning estimate for a five-day getaway.",
+    "bestTime": "April to October",
+    "highlights": [
+      "Uluwatu sunset temple",
+      "Tegallalang rice terraces",
+      "Ubud art and cafés",
+      "Beachside golden hour"
+    ],
+    "images": [
+      "assets/bali 1.avif",
+      "assets/bali 2.webp",
+      "assets/bali 3.jpg"
+    ]
+  },
+  {
+    "id": "swiss-alps",
+    "name": "Swiss Alps",
+    "country": "Switzerland",
+    "region": "Central Europe",
+    "category": "Mountain",
+    "duration": "6 days",
+    "price": 64999,
+    "rating": 4.9,
+    "shortDescription": "Alpine trails, glassy lakes, and storybook mountain villages.",
+    "description": "The Swiss Alps are made for crisp mountain air, panoramic rail journeys, turquoise lakes, and villages tucked between dramatic peaks. Choose a gentle lakeside walk or a more adventurous trail, and leave plenty of time to enjoy the views. This sample package is a planning estimate for six days.",
+    "bestTime": "June to September",
+    "highlights": [
+      "Lauterbrunnen valley",
+      "Scenic mountain railways",
+      "Lake Brienz viewpoints",
+      "Traditional alpine villages"
+    ],
+    "images": [
+      "assets/swiss-alps 2.avif",
+      "assets/swiss-alps 3.jpg",
+      "assets/swiss-alps 1.jpg"
+    ]
+  },
+  {
+    "id": "kyoto",
+    "name": "Kyoto",
+    "country": "Japan",
+    "region": "East Asia",
+    "category": "Culture",
+    "duration": "4 days",
+    "price": 45999,
+    "rating": 4.8,
+    "shortDescription": "Quiet shrines, lantern-lit lanes, gardens, and timeless traditions.",
+    "description": "Kyoto invites you to slow down and notice the details: a quiet garden, a shrine framed by trees, the glow of lanterns in a narrow lane. Explore historic districts, sample local cuisine, and experience a thoughtful blend of tradition and contemporary Japanese life. This sample package is a planning estimate for four days.",
+    "bestTime": "March to May and October to November",
+    "highlights": [
+      "Fushimi Inari shrine paths",
+      "Arashiyama bamboo grove",
+      "Historic Gion district",
+      "Traditional tea experience"
+    ],
+    "images": [
+      "assets/kyoto 1.jpg",
+      "assets/kyoto 2.jpg",
+      "assets/kyoto 3.jpg"
+    ]
+  },
+  {
+    "id": "ladakh",
+    "name": "Ladakh",
+    "country": "India",
+    "region": "Himalayas",
+    "category": "Adventure",
+    "duration": "6 days",
+    "price": 24999,
+    "rating": 4.8,
+    "shortDescription": "High-altitude desert, cobalt lakes, and vast Himalayan skies.",
+    "description": "Ladakh is a land of stark mountain landscapes, winding high passes, monastery courtyards, and deep blue lakes. The journey is as much about the quiet scale of the Himalayas as it is about adventure. Plan carefully for altitude and acclimatization. This sample package is a planning estimate for six days.",
+    "bestTime": "May to September",
+    "highlights": [
+      "Pangong Lake views",
+      "Thiksey Monastery",
+      "Leh old town",
+      "High mountain passes"
+    ],
+    "images": [
+      "assets/ladakh 1.webp",
+      "assets/ladakh 2.webp",
+      "assets/ladakh 3.webp"
+    ]
+  },
+  {
+    "id": "santorini",
+    "name": "Santorini",
+    "country": "Greece",
+    "region": "Aegean Islands",
+    "category": "Beach",
+    "duration": "5 days",
+    "price": 52999,
+    "rating": 4.7,
+    "shortDescription": "Whitewashed villages, volcanic coastlines, and glowing sunsets.",
+    "description": "Santorini is known for whitewashed villages that spill down volcanic cliffs, blue-domed churches, and sunsets over the Aegean Sea. Wander the small lanes, discover local food, and explore the island's distinct black-sand beaches. This sample package is a planning estimate for five days.",
+    "bestTime": "May to October",
+    "highlights": [
+      "Oia sunset viewpoint",
+      "Fira cliffside lanes",
+      "Volcanic black-sand beach",
+      "Aegean coastal dining"
+    ],
+    "images": [
+      "assets/santorini 2.avif",
+      "assets/santorini 3.jpg",
+      "assets/santorini 1.jpg"
+    ]
+  },
+  {
+    "id": "queenstown",
+    "name": "Queenstown",
+    "country": "New Zealand",
+    "region": "South Island",
+    "category": "Adventure",
+    "duration": "5 days",
+    "price": 57999,
+    "rating": 4.8,
+    "shortDescription": "Lakefront views, dramatic peaks, and an outdoorsy spirit.",
+    "description": "Surrounded by the Remarkables and Lake Wakatipu, Queenstown is an inviting base for outdoor adventures and scenic day trips. Try a lakeside stroll, a gondola ride, or a thrilling activity, then wind down with local food and mountain views. This sample package is a planning estimate for five days.",
+    "bestTime": "December to February for summer; June to August for snow",
+    "highlights": [
+      "Lake Wakatipu waterfront",
+      "Skyline gondola views",
+      "Glenorchy scenic drive",
+      "Adventure activities"
+    ],
+    "images": [
+      "assets/queenstown 1.jpg",
+      "assets/queenstown 2.jpg",
+      "assets/queenstown 3.jpg"
+    ]
+  },
+  {
+    "id": "jaipur",
+    "name": "Jaipur",
+    "country": "India",
+    "region": "Rajasthan",
+    "category": "Culture",
+    "duration": "3 days",
+    "price": 12999,
+    "rating": 4.7,
+    "shortDescription": "Rose-hued palaces, bustling bazaars, and rich Rajasthani flavour.",
+    "description": "Jaipur's pink-toned streets are full of history, craft, colour, and warm hospitality. Explore grand forts and palaces, browse artisan markets, and try local Rajasthani dishes. It's a vibrant introduction to the region's architectural and cultural heritage. This sample package is a planning estimate for three days.",
+    "bestTime": "October to March",
+    "highlights": [
+      "Amber Fort",
+      "Hawa Mahal facade",
+      "City Palace courtyards",
+      "Local crafts and cuisine"
+    ],
+    "images": [
+      "assets/jaipur 3.jpg",
+      "assets/jaipur 2.webp",
+      "assets/jaipur 1.webp"
+    ]
+  },
+  {
+    "id": "amalfi",
+    "name": "Amalfi Coast",
+    "country": "Italy",
+    "region": "Southern Italy",
+    "category": "Beach",
+    "duration": "5 days",
+    "price": 61999,
+    "rating": 4.8,
+    "shortDescription": "Cliffside villages, lemon groves, and Mediterranean blue.",
+    "description": "The Amalfi Coast winds through pastel villages, terraced lemon groves, and coastal views that seem to go on forever. Take your time over long lunches, explore by boat when conditions allow, and wander the narrow lanes of the seaside towns. This sample package is a planning estimate for five days.",
+    "bestTime": "May to September",
+    "highlights": [
+      "Positano village lanes",
+      "Ravello garden views",
+      "Coastal boat excursion",
+      "Lemon grove treats"
+    ],
+    "images": [
+      "assets/amafli-coast 1.jpg",
+      "assets/amafli-coast 2.webp",
+      "assets/amafli-coast 3.webp"
+    ]
+  }
+]

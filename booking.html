@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Demo checkout | TripNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+    <main>
+        <section class="page-hero compact"><span class="eyebrow light">SECURE DEMO CHECKOUT</span>
+            <h1>Make it <em>official.</em></h1>
+            <p>This is a simulated payment flow for your assessment. No real money is charged.</p>
+        </section>
+        <section class="section checkout-layout">
+            <form id="payment-form" class="checkout-card">
+                <h2>Payment details</h2>
+                <div class="demo-banner">🛡 Demo mode only · Never enter real card or banking details.</div>
+                <div class="payment-methods"><label><input type="radio" name="method" value="card" checked>
+                        Card</label><label><input type="radio" name="method" value="upi"> UPI</label><label><input
+                            type="radio" name="method" value="netbanking"> Net banking</label></div>
+                <div id="card-fields"><label>Cardholder name<input name="cardName" autocomplete="cc-name"
+                            placeholder="Name on card" required></label><label>Card number<input name="cardNumber"
+                            inputmode="numeric" autocomplete="off" maxlength="19" placeholder="4242 4242 4242 4242"
+                            required></label>
+                    <div class="form-grid-two"><label>Expiry date<input name="expiry" placeholder="MM/YY" maxlength="5"
+                                required></label><label>CVV<input name="cvv" inputmode="numeric" placeholder="123"
+                                maxlength="4" required></label></div>
+                </div>
+                <div id="upi-fields" class="hidden"><label>Demo UPI ID<input name="upi"
+                            placeholder="demo@upi"></label><small class="muted">Use a fictional ID for this
+                        simulation.</small></div>
+                <div id="bank-fields" class="hidden"><label>Select demo bank<select name="bank">
+                            <option value="">Choose a bank</option>
+                            <option>Demo National Bank</option>
+                            <option>Sample City Bank</option>
+                            <option>TripNova Test Bank</option>
+                        </select></label></div><label class="check-label terms"><input type="checkbox"
+                        name="demoConsent" required> I understand this is a demo payment and no real transaction will
+                    occur.</label><button class="btn btn-primary btn-full" type="submit" id="pay-button">Pay securely
+                    <span>→</span></button>
+                <p id="payment-message" class="muted small-text" role="status"></p>
+            </form>
+            <aside id="checkout-summary" class="summary-card"></aside>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <div id="success-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true"
+        aria-labelledby="success-title">
+        <div class="success-modal">
+            <div class="success-check">✓</div><span class="eyebrow">BOOKING CONFIRMED</span>
+            <h2 id="success-title">It's happening!</h2>
+            <p id="success-description">Your demo booking is confirmed.</p>
+            <div id="ticket-content" class="ticket"></div><button id="download-ticket"
+                class="btn btn-primary btn-full">Download booking receipt ↓</button><a href="home.html"
+                class="btn btn-outline btn-full">Back to home</a>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

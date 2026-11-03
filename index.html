@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#102b2a" />
+  <meta name="description" content="TripNova — discover extraordinary destinations." />
+  <title>TripNova | Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="auth-body">
+  <div class="auth-orb orb-one"></div>
+  <div class="auth-orb orb-two"></div>
+  <div class="auth-orb orb-three"></div>
+  <header class="auth-brand">
+    <a class="brand" href="index.html">
+        <img src="assets/tripnova-logo.png"
+             alt="TripNova Logo"
+             class="brand-logo">
+    </a>
+
+    <span class="brand-note">
+        YOUR NEXT CHAPTER STARTS HERE
+    </span>
+  </header>
+  <main class="auth-layout">
+    <section class="auth-copy">
+      <span class="eyebrow light">TRAVEL BEYOND ORDINARY</span>
+      <h1>The world is<br /><em>waiting for you.</em></h1>
+      <p>
+        Find your next escape, collect unforgettable moments, and make every
+        journey count.
+      </p>
+      <div class="auth-perks">
+        <span>✈ Curated getaways</span><span>✦ One-of-a-kind stays</span><span>♡ Memories that last</span>
+      </div>
+      <div class="auth-landscape">
+        <div class="sun"></div>
+        <div class="mountain m1"></div>
+        <div class="mountain m2"></div>
+        <div class="mountain m3"></div>
+        <div class="landscape-label">
+          Somewhere wonderful is closer than you think.
+        </div>
+      </div>
+    </section>
+    <section class="auth-card">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth-tab="login">Log in</button><button class="auth-tab"
+          data-auth-tab="signup">
+          Create account
+        </button>
+      </div>
+      <div id="auth-message" class="notice hidden" role="status"></div>
+      <form id="login-form" class="auth-form">
+        <h2>Welcome back</h2>
+        <p class="muted">Your next adventure is just a sign-in away.</p>
+        <label>Email address<input name="email" type="email" placeholder="you@example.com" autocomplete="email"
+            required /></label>
+        <label>Password
+          <span class="password-wrap"><input name="password" type="password" placeholder="Enter your password"
+              autocomplete="current-password" required minlength="8" /><button type="button" class="show-password"
+              aria-label="Show password">
+              Show
+            </button></span></label>
+        <div class="form-row">
+          <label class="check-label"><input name="remember" type="checkbox" checked /> Remember
+            me</label><button type="button" id="forgot-password" class="text-button">
+            Forgot password?
+          </button>
+        </div>
+        <button class="btn btn-primary btn-full" type="submit">
+          Log in <span>→</span>
+        </button>
+        <p class="form-foot">
+          New to TripNova?
+          <button type="button" class="text-button" data-switch="signup">
+            Create an account
+          </button>
+        </p>
+        <p class="demo-hint">
+          Demo project: create an account first to sign in.
+        </p>
+      </form>
+      <form id="signup-form" class="auth-form hidden">
+        <h2>Create your account</h2>
+        <p class="muted">Let's get your journey started.</p>
+        <label>Full name<input name="name" type="text" placeholder="Your full name" autocomplete="name" required
+            minlength="2" maxlength="60" /></label>
+        <label>Email address<input name="email" type="email" placeholder="you@example.com" autocomplete="email"
+            required /></label>
+        <label>Phone number<input name="phone" type="tel" inputmode="numeric" placeholder="10-digit mobile number"
+            pattern="[6-9][0-9]{9}" title="Enter a valid 10-digit Indian mobile number" required /></label>
+        <label>Password
+          <span class="password-wrap"><input name="password" type="password" placeholder="Min. 8 characters"
+              autocomplete="new-password" required minlength="8"
+              pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+              title="Use 8+ characters with uppercase, lowercase, number and symbol" /><button type="button"
+              class="show-password" aria-label="Show password">
+              Show
+            </button></span></label>
+        <label>Confirm password<input name="confirmPassword" type="password" placeholder="Re-enter password"
+            autocomplete="new-password" required /></label>
+        <label class="check-label terms"><input name="terms" type="checkbox" required /> I agree to the demo
+          terms and privacy notice.</label>
+        <button class="btn btn-primary btn-full" type="submit">
+          Create account <span>→</span>
+        </button>
+        <p class="form-foot">
+          Already have an account?
+          <button type="button" class="text-button" data-switch="login">
+            Log in
+          </button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer class="auth-footer">
+    © 2026 TripNova · Your next journey starts here
+  </footer>
+  <script src="js/auth.js"></script>
+</body>
+
+</html>

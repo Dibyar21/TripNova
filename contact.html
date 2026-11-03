@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact | TripNova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="site-header"></div>
+    <main>
+        <section class="page-hero compact"><span class="eyebrow light">LET'S TALK TRAVEL</span>
+            <h1>Have a little <em>something to ask?</em></h1>
+            <p>Send a message using this demo contact form.</p>
+        </section>
+        <section class="section contact-layout">
+            <div class="contact-copy"><span class="eyebrow">GET IN TOUCH</span>
+                <h2>We'd love to hear from you.</h2>
+                <p class="muted">Questions, suggestions, or a destination you think we should feature? Leave us a note.
+                </p>
+                <div class="contact-detail"><span>✉</span>
+                    <div><b>Email</b>
+                        <p>hello@tripnova.example</p>
+                    </div>
+                </div>
+                <div class="contact-detail"><span>⌖</span>
+                    <div><b>Location</b>
+                        <p>Bhubaneswar, Odisha, India</p>
+                    </div>
+                </div>
+                <div class="contact-detail"><span>◷</span>
+                    <div><b>Availability</b>
+                        <p>Demo project · Replies are not sent</p>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form" class="checkout-card">
+                <h2>Send a message</h2><label>Your name<input name="name" required minlength="2"
+                        placeholder="Full name"></label><label>Email address<input type="email" name="email" required
+                        placeholder="you@example.com"></label><label>What is this about?<select name="subject">
+                        <option>Travel suggestion</option>
+                        <option>Website feedback</option>
+                        <option>General question</option>
+                    </select></label><label>Your message<textarea name="message" rows="5" required minlength="10"
+                        placeholder="Tell us what's on your mind..."></textarea></label><button
+                    class="btn btn-primary btn-full">Send message →</button>
+                <p id="contact-message" class="muted small-text" role="status"></p>
+            </form>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
